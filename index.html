@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey example</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Developer Survey</h1>
+        <p id="description">This is a survey about achievements and struggles in the daily life of developers.</p>
+    </header>
+    <main>
+        <form id="survey-form" action="" method="get">
+
+            <fieldset>
+                <legend>Background information</legend>
+
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Hackerman">
+
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="hackerman@kung.fu">
+
+            </fieldset>
+
+            <label id="number-label" for="number">How many years have you've been coding?</label>
+            <input type="number" name="number" id="number" min="0" max="100" placeholder="0-100">
+
+            <label for="dropdown">What's your favourite source for learning?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled selected>Select a source</option>
+                <option value="book">Books</option>
+                <option value="bootcamp">Bootcamp</option>
+                <option value="school">School</option>
+                <option value="blog">Blogs</option>
+                <option value="tutorial">Tutorials</option>
+                <option value="online course">Online Course</option>
+                <option value="movies">Kung Fury</option>
+                <option value="other">Other</option>
+            </select>
+
+            <fieldset>
+                <legend>What's your preferred type of machine for coding?</legend>
+                <input type="radio" name="radio-option" value="desktop" checked>Desktop
+                <input type="radio" name="radio-option" value="laptop">Laptop
+                <input type="radio" name="radio-option" value="tablet">Tablet
+                <input type="radio" name="radio-option" value="paper">Paper
+                <input type="radio" name="radio-option" value="fists">Fists
+            </fieldset>
+
+            <fieldset id="language-choice">
+                <legend>What languages/markups are you coding in?</legend>
+                <input type="checkbox" id="chb-html" name="language" value="html" >
+                <label for="chb-html">HTML/CSS</label>
+
+                <input type="checkbox" id="chb-js" name="language" value="js" >
+                <label for="chb-js">JavaScript</label>
+
+                <input type="checkbox" id="chb-py" name="language" value="py" >
+                <label for="chb-py">Python</label>
+
+                <input type="checkbox" id="chb-java" name="language" value="java" >
+                <label for="chb-java">Java</label>
+
+                <input type="checkbox" id="chb-csh" name="language" value="csh" >
+                <label for="chb-csh">C#</label>
+
+                <input type="checkbox" id="chb-php" name="language" value="php" >
+                <label for="chb-php">PHP</label>
+
+                <input type="checkbox" id="chb-other" name="language" value="other" >
+                <label for="chb-php">Other</label>
+            </fieldset>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+     <!-- script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script -->
 </body>
 </html>
